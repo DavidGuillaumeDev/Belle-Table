@@ -1,4 +1,6 @@
 <?php
+  namespace app;
+  use app\offresEploi as offresEmploi;
 
   include("db.inc.php");
   session_start();
