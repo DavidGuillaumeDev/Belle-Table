@@ -66,7 +66,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="picture" class="form-label">Ajouter une photo</label>
-                            <input type="text" class="form-control" name="picture" value="images/setcouvert.jpg">
+                            <input type="text" class="form-control" name="picture" >
                         </div>
                         <div class="mb-3">
                         <input class="form-check-input" type="checkbox" checked id="activation" name="activation">

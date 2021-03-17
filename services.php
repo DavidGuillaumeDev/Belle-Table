@@ -22,15 +22,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Boutique</title>
 </head>
-<body style="background-color: #F7F4F3">
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
 <?php include('navBar.php'); ?>
 <div >
     <div class="row" >
       <?php foreach($products as $row) :  ?>   
-          <div class="col-md-3">    
-            <div  style="text-align:center">
-              <div id="box" >
+          <div class="col-md-3" >    
+            <div  style="text-align:center;background-color: white;border-radius:10px; margin:10px" >
+              <div id="box"  >
                 <a href="product.php?product_id=<?= $row[0] ?>" style="text-decoration : none;">
                     <img src="<?= $row[3] ?>" alt="" id="imgg"/>
                 </a>

@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
     <?php include('navBar.php'); ?>
 
@@ -36,7 +36,7 @@
         ?>
         <div class="col-sm-3" >
             <div class="review-block-name">
-                <a href="#">
+                <a href="othersaccount.php?user_id=<?= $row[1] ?>">
                 <?= $user['name']." ".$user['lastname']; ?>
                 </a>
             </div>

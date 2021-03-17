@@ -49,7 +49,7 @@
 
 </head>
 
-<body style="background-color: #F7F4F3">
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
     <?php include('navBar.php'); ?>
 <div >
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-sm-12" style="height:150px;"></div>
             <div class="col-sm-3"></div>
-            <div class="col-sm-6" style="text-align: center;background-color: white; height:520px; border: 2px solid black; border-radius: 10px;">
+            <div class="col-sm-6" style="text-align: center; height:520px; ">
                 <h4>Laissez-nous un avis</h4>
                 <form action="" method="post">
                     <div class="mb-3">

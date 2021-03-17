@@ -24,15 +24,15 @@
 
 </head>
 
-<body style="background-color: #F7F4F3">
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
 
 <?php include('navBar.php'); ?>
 <div >
     <div class="row">
-    <h2 style="text-align: center; color:white;text-shadow: 2px 2px 2px black;font-family: 'Times New Roman', Times, serif;font-size: x-large;font-size: 50px; font-style: italic">Nos offres d'emploi</h2>
+    <h2 style="text-align: center; color:#DCA66F;text-shadow: 2px 2px 2px black;font-family: 'Times New Roman', Times, serif;font-size: x-large;font-size: 50px; font-style: italic">Nos offres d'emploi</h2>
       <?php foreach($offers as $row) : ?>   
-        <div class="card" style="width: 18rem; margin: 15px; height :300px;border: 2px solid black; border-radius: 10px;text-align:center">
+        <div class="card" style="width: 18rem; margin: 15px; height :300px; border-radius: 10px;text-align:center; ">
           <div class="card-body">
             <h5 class="card-title" ><?= $row[1] ?></h5>
             <p class="card-text"><?= $row[2] ?></p>

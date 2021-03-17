@@ -5,11 +5,12 @@
     if(!isset($_SESSION['user'])){
         header('Location:index.php');
     }else{
-        $user=$_SESSION['user'];
+        $user_id=$_GET['user_id'];
+        $user=$mysqli->query('SELECT * FROM users WHERE `id`="'.$user_id.'"');
+        $user=$user->fetch_assoc();
     }
-    $avis=$mysqli->query('SELECT * FROM avis WHERE `user_id`="'.$_SESSION['user']['id'].'"');
-    $products=$mysqli->query('SELECT * FROM reservations WHERE `user_id`="'.$_SESSION['user']['id'].'"');
-    
+    $avis=$mysqli->query('SELECT * FROM avis WHERE `user_id`="'.$user_id.'"');
+    $products=$mysqli->query('SELECT * FROM reservations WHERE `user_id`="'.$user_id.'"');
  ?>
 
 

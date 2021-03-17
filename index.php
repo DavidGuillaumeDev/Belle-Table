@@ -10,12 +10,11 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="icon" href="images/favicon.ico" />
     <title>BelleTable</title>
 
 </head>
 
-<body>
+<body style="background-image: url(images/fonddecranblanc.jpg);">
     <?php include('navBar.php'); ?>
       <div class="container-fluid" style="background-image: url(images/fonddecran1.jpg);height: 820px;background-repeat: no-repeat;background-size: cover;">
         <div class="container">

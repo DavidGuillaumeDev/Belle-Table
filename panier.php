@@ -45,7 +45,7 @@
 
 </head>
 
-<body style="background-color: #F7F4F3">
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
 <?php include('navBar.php') ?>
 

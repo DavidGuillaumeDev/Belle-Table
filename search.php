@@ -33,7 +33,7 @@ $searchO=searchOffer($_POST['search'], $mysqli);
     <title>Recherche</title>
 
 </head>
-<body style="background-color: #F7F4F3">
+<body style="background-image: url(images/fonddecranblanc.jpg);">
     
 
 <?php include('navBar.php'); ?>
@@ -41,13 +41,13 @@ $searchO=searchOffer($_POST['search'], $mysqli);
 <?php
 if(isset($searchP)) :
 ?>
-    <h3 style="text-align: center; color:black;font-family: 'Times New Roman', Times, serif;font-size: x-large;font-size: 40px; font-style: italic">Voici nos produits associés à votre recherche :</h3>
+    <h3 style="text-align: center; color:#DCA66F;font-family: 'Times New Roman', Times, serif;text-shadow: 2px 2px 2px black;font-size: x-large;font-size: 40px; font-style: italic">Voici nos produits associés à votre recherche :</h3>
     <div class="row">
 <?php
     foreach($searchP as $row) :
 ?>
     <div class="col-md-3">    
-            <div  style="text-align:center">
+            <div  style="text-align:center;background-color: white;border-radius:10px; margin:10px"> 
               <div id="box" >
                 <a href="product.php?product_id=<?= $row[0] ?>" style="text-decoration : none;">
                     <img src="<?= $row[3] ?>" alt="" id="imgg"/>
@@ -71,17 +71,17 @@ endif;
 
 if(isset($searchO)) :
 ?>
-    <h3 style="text-align: center; color:black;font-family: 'Times New Roman', Times, serif;font-size: x-large;font-size: 40px; font-style: italic">Voici nos offres d'emploi associés à votre recherche :</h3>
+    <h3 style="text-align: center; color:#DCA66F;text-shadow: 2px 2px 2px black;font-family: 'Times New Roman', Times, serif;font-size: x-large;font-size: 40px; font-style: italic">Voici nos offres d'emploi associés à votre recherche :</h3>
     <div class="row">
 <?php
     foreach($searchO as $row) :
 ?>
-        <div class="card" style="width: 18rem; margin: 15px; height :300px;border: 2px solid black; border-radius: 10px;text-align:center">
+        <div class="card" style="width: 18rem; margin: 15px; height :300px;text-align:center">
           <div class="card-body">
             <h5 class="card-title" ><?= $row[1] ?></h5>
             <p class="card-text"><?= $row[2] ?></p>
             <h5 class="card-title"><?= $row[3] ?>Euros</h5>
-            <form action="postuler.php" method="post">
+            <form action="difficulte.php" method="post">
               <input type="hidden" name="offers_id" value="<?= $row[0] ?>">
               <?php  if(isset($_SESSION['user'])) :  ?>
               <button type="submit" class="btn btn-primary" >Postuler à cette offre</button>

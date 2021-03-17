@@ -62,15 +62,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Création de compte</title>
 </head>
-<body>
+<body style="background-image: url(images/fonddecranblanc.jpg);">
 
     <?php include('navBar.php'); ?>
-<div style="background-image: url(images/fonddecran1.jpg); height: 861px; background-repeat: no-repeat;background-size: cover;">
+<div >
     <div class="container">
         <div class="row">
             <div class="col-sm-12" style="height:200px;"></div>
             <div class="col-sm-3"></div>
-            <div class="col-sm-6" style="text-align: center; height:380px;background-color: white; border: 2px solid black; border-radius: 10px;">
+            <div class="col-sm-6" style="text-align: center; height:380px; border-radius: 10px;">
                 <form action="" method="post">
                     <br><h4>Création de nouveau compte</h4><br>
                     <div style="margin:10px;">
