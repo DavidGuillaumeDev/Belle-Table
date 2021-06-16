@@ -14,9 +14,3 @@ Voici les différents lien et fichiers dont vous aurez besoin :
 
 Lien du site en ligne : http://belletable.dhm-infoprocess.fr
 
-Lien de la BDD : https://phpmyadmin.cluster026.hosting.ovh.net/index.php
-
-Accès à la BDD :       
-Server -> dhminfopfogui.mysql.db    
-Username -> dhminfopfogui     
-Password -> MD631123os 
